@@ -1,0 +1,18 @@
+
+    <div class="container d-flex justify-content-center">
+        <button (click)="getPost()" class="btn btn-primary mb-5">Ver Post</button>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 pb-5" *ngFor="let post of listaPost">
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title text-center py-3">{{post.title}}</h5>
+                      <h6 class="card-title ">id: {{post.id}}</h6>
+                      <p style="text-align: justify;">{{post.body}}</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
